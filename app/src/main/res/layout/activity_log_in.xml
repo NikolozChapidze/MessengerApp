@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="@dimen/profilePicture_size"
+        android:layout_height="@dimen/profilePicture_size"
+        android:layout_marginTop="@dimen/profilePicture_top_margin"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar_image_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/nickname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="@dimen/login_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nickname_top_margin"
+        android:background="@drawable/login_text_background"
+        android:hint="@string/nickname_default"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:paddingHorizontal="@dimen/login_text_horizontal_pad"
+        android:paddingVertical="@dimen/login_text_vertical_pad"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/app_def_gray"
+        android:textSize="@dimen/login_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilePicture" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/login_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/password_top_margin"
+        android:background="@drawable/login_text_background"
+        android:hint="@string/password_default"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:paddingHorizontal="@dimen/login_text_horizontal_pad"
+        android:paddingVertical="@dimen/login_text_vertical_pad"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/app_def_gray"
+        android:textSize="@dimen/login_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nickname" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sign_in_button_top_margin"
+        android:backgroundTint="@color/app_def_blue"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text_size"
+        app:cornerRadius="@dimen/login_button_corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <TextView
+        android:id="@+id/not_registered_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_registered"
+        android:textColor="@color/black"
+        android:textSize="@dimen/not_registered_text_size"
+        app:layout_constraintBottom_toTopOf="@id/register_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sign_up_bottom_margin"
+        android:backgroundTint="@color/white"
+        android:paddingVertical="@dimen/sign_up_vertical_pad"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sign_up_text_size"
+        app:cornerRadius="@dimen/login_button_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

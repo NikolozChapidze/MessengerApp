@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_bar">60dp</dimen>
+    <dimen name="profilePicture_size">150dp</dimen>
+    <dimen name="profilePicture_top_margin">100dp</dimen>
+    <dimen name="login_text_width">350dp</dimen>
+    <dimen name="nickname_top_margin">50dp</dimen>
+    <dimen name="password_top_margin">20dp</dimen>
+    <dimen name="login_text_horizontal_pad">15dp</dimen>
+    <dimen name="login_text_vertical_pad">10dp</dimen>
+    <dimen name="login_text_size">20sp</dimen>
+    <dimen name="sign_in_button_top_margin">30dp</dimen>
+    <dimen name="login_button_text_size">21sp</dimen>
+    <dimen name="login_button_corners">10dp</dimen>
+    <dimen name="not_registered_text_size">17sp</dimen>
+    <dimen name="sign_up_bottom_margin">8dp</dimen>
+    <dimen name="sign_up_vertical_pad">10dp</dimen>
+    <dimen name="sign_up_text_size">20sp</dimen>
+</resources>

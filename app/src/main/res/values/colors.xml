@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="send_msg_color">#5479F1</color>
+    <color name="app_def_blue">#5479F1</color>
+    <color name="app_def_gray">#808080</color>
+    <color name="receive_msg_color">#F4F6FF</color>
+    <color name="not_real_gray">#F4F6FF</color>
+    <color name="transparent">#0F878787</color>
 </resources>
