@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_profilePicture"
+        android:layout_width="@dimen/profilePicture_size"
+        android:layout_height="@dimen/profilePicture_size"
+        android:layout_marginTop="@dimen/register_profilePicture_top_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_image_placeholder" />
+
+    <EditText
+        android:id="@+id/register_nickname"
+        android:layout_width="@dimen/login_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_nickname_top_margin"
+        android:background="@drawable/login_text_background"
+        android:gravity="center"
+        android:hint="@string/enter_your_nickname"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingHorizontal="@dimen/login_text_horizontal_pad"
+        android:paddingVertical="@dimen/register_text_vertical_margin"
+        android:textSize="@dimen/sign_up_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_profilePicture"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="@dimen/login_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_password_top_margin"
+        android:background="@drawable/login_text_background"
+        android:gravity="center"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingHorizontal="@dimen/login_text_horizontal_pad"
+        android:paddingVertical="@dimen/register_text_vertical_margin"
+        android:textSize="@dimen/sign_up_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_nickname"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/register_profession"
+        android:layout_width="@dimen/login_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_whatIdo_top_margin"
+        android:background="@drawable/login_text_background"
+        android:gravity="center"
+        android:hint="@string/what_i_do"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingHorizontal="@dimen/login_text_horizontal_pad"
+        android:paddingVertical="@dimen/register_text_vertical_margin"
+        android:textSize="@dimen/sign_up_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password"
+        tools:ignore="Autofill" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_sign_up_margin"
+        android:text="@string/sign_up"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/app_def_blue"
+        app:cornerRadius="@dimen/login_button_corners"
+        android:textSize="@dimen/sign_up_bigger_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_profession" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
