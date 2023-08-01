@@ -6,4 +6,10 @@
     <dimen name="message_max_width">300dp</dimen>
     <dimen name="message_padding">20dp</dimen>
     <dimen name="message_text_size">21sp</dimen>
+    <dimen name="list_image_dimen">65dp</dimen>
+    <dimen name="user_list_margin">15dp</dimen>
+    <dimen name="user_list_pad_horizontal">25dp</dimen>
+    <dimen name="user_list_name_text_size">20sp</dimen>
+    <dimen name="user_list_profession_text_size">15sp</dimen>
+    <dimen name="user_info_margin">15dp</dimen>
 </resources>
